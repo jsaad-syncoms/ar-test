@@ -181,7 +181,8 @@
             model = gltf.scene.children[0];
             model.name = 'Flamingo';
             const clips = gltf.animations;
-
+            console.log('clips:', clips);
+            gltf.scene.animations = gltf.animations;
             var animation = gltf.animations[0];
             var mixer = new THREE.AnimationMixer(gltf.scene);
             mixers.push(mixer);
