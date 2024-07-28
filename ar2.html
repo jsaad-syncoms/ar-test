@@ -186,6 +186,7 @@
             var animation = gltf.animations[0];
             var mixer = new THREE.AnimationMixer(gltf.scene);
             mixers.push(mixer);
+            console.log(gltf);
             //const clip = THREE.AnimationClip.findByName(clips, 'flamingo_flyA_');
             //var action = mixer.clipAction(clip);
             var action = mixer.clipAction(animation);
